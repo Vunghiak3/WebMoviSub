@@ -28,7 +28,7 @@
 2. Cài đặt dependencies:
    ```sh
    yarn install  
-   hoặc 
+hoặc 
    ```sh
    npm install
 3. Cấu hình môi trường:
@@ -46,7 +46,7 @@
 4. Chạy dự án
    ```sh
    yarn dev
-   hoặc
+hoặc
    ```sh 
    npm run dev
 Ứng dụng sẽ chạy tại http://localhost:3000

@@ -1,0 +1,158 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.inner {
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.login-form {
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+
+  label {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  input {
+    width: 100%;
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    color: black;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .forgot-password {
+    color: #007bff;
+    text-decoration: underline;
+
+    &:hover {
+      color: #0474ec;
+    }
+
+    &:active {
+      color: #007bff;
+    }
+  }
+}
+
+.btn-login {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+
+  &:active {
+    background-color: #003f7f;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+}
+
+.register-prompt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 5px;
+
+  .register-link {
+    color: #10a37f;
+  }
+}
+
+.container-providers {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.wrapper-providers {
+  background-color: white;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 100%;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.btn-provider {
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  background-color: transparent;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &:active {
+    background-color: rgb(221, 218, 218);
+  }
+
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

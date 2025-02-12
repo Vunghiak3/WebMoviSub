@@ -1,0 +1,133 @@
+$layout-3: 850px;
+$layout-4: 570px;
+
+// css content movie
+.info-movie {
+  display: flex;
+  column-gap: 50px;
+  padding: 10px;
+  align-items: center;
+}
+
+.img-movie {
+  position: relative;
+  height: 300px;
+  border-radius: 5px;
+  // overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  > div {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.btn-watch,
+.btn-favourite {
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: #8b5cf6;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: all 0.1s linear;
+
+  &:hover {
+    background-color: rgb(119, 79, 211);
+  }
+}
+
+.btn-favourite {
+  color: white;
+}
+
+.active-favourite {
+  color: #eb4545;
+}
+
+.content-movie {
+  flex: 1;
+
+  .title {
+    color: #8b5cf6;
+    margin: 5px 0;
+  }
+}
+
+.table {
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+  color: rgb(187, 185, 185);
+
+  tr th {
+    width: 200px;
+    font-weight: normal;
+  }
+
+  tr > * {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.493);
+    padding: 5px;
+  }
+}
+
+// css description
+.description {
+  margin-top: 20px;
+
+  h2 {
+    color: #ff8802;
+  }
+
+  div {
+    color: rgb(187, 185, 185);
+  }
+}
+
+@media (max-width: $layout-3) {
+  .info-movie {
+    flex-direction: column;
+  }
+
+  .description > div {
+    height: 200px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+    }
+  }
+}
+
+@media (max-width: $layout-4) {
+  .table tr th {
+    width: 130px;
+  }
+
+  .table tr td {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}

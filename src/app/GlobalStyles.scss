@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;1,300;1,400&display=swap);
+
+:root {
+  --font-family: "IBM Plex Sans", san-serif;
+
+  --max-width-layout: 1400px;
+  --size-logo: 60px;
+
+  --background-primary: #263238;
+  --background-menu: #0f1416;
+  --color-primary: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  background-color: var(--background-primary);
+  color: var(--color-primary);
+}
+
+button,
+input,
+[tabindex] {
+  border: none;
+  outline: none;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+// custom srollbar
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgb(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgb(0, 0, 0, 0);
+}
+
+//css body
+.wrapper {
+  padding: 10px 20px;
+  max-width: var(--max-width-layout);
+  margin: 0 auto;
+  background-color: var(--background-menu);
+  margin-top: 20px;
+}

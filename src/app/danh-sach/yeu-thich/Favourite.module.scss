@@ -1,0 +1,59 @@
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.table-movie {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.header {
+  font-weight: bold;
+}
+
+.header th {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.body td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.body tr:hover {    
+  background-color: #181f22;
+  
+  p {
+    color: white;
+  }
+}
+
+.btn-remove {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-remove:hover {
+  background-color: #e60000;
+}
+
+.btn-remove:active {
+  background-color: #cc0000;
+}
+
+.btn-remove:disabled {
+  background-color: #f5f5f5;
+  color: #a0a0a0;
+  cursor: not-allowed;
+}

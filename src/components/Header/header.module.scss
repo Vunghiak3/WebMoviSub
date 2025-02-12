@@ -1,0 +1,173 @@
+$layout-2: 1200px;
+$layout-3: 850px;
+$layout-4: 570px;
+
+.wrapper {
+  background-color: var(--background-menu);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.inner {
+  padding: 0px 20px;
+  padding-bottom: 10px;
+  max-width: var(--max-width-layout);
+  margin: 0 auto;
+}
+
+.logo img {
+  width: var(--size-logo);
+  height: auto;
+  padding: 8px;
+}
+
+// css nav menu
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .menu-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.1s linear;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: rgba(28, 36, 39, 0.588);
+    }
+  }
+
+  .active-menu {
+    background-color: rgba(62, 73, 77, 0.588);
+
+    &:hover {
+      background-color: rgba(62, 73, 77, 0.588);
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-login {
+  white-space: nowrap;
+  transition: all 0.1s linear;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  &:hover {
+    color: rgb(163, 204, 17);
+    text-decoration: underline;
+  }
+}
+
+// css menu responsive
+.icon-menu {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.menu-responsive {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  background-color: gray;
+  padding: 15px;
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+  z-index: 2;
+}
+
+.bg-menu-responsive {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.281);
+  z-index: 1;
+  transform: translateX(100%);
+}
+
+.active-menu {
+  transform: translateX(0) !important;
+}
+
+.header-responsive {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .btn-close-responsive {
+    cursor: pointer;
+    font-size: 2rem;
+  }
+}
+
+.navbar-responsive {
+  display: flex;
+  flex-direction: column;
+}
+
+// css icon user
+.wrapper-user {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+
+  p{
+    white-space: nowrap;
+  }
+}
+
+.detail-menu-user {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #263238;
+
+  .menu-item-user:hover {
+    color: rgb(163, 204, 17);
+    text-decoration: underline;
+  }
+  .menu-item-user, .btn-login {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: $layout-2) {
+  
+}
+
+@media (max-width: $layout-4) {
+  .inner{
+    padding: 0 10px;
+  }
+
+  .wrapper-user p{
+    display: none;
+  }
+}

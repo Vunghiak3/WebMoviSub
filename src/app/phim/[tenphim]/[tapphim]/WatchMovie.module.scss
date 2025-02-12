@@ -1,0 +1,45 @@
+$layout-2: 1200px;
+$layout-3: 850px;
+$layout-4: 570px;
+$layout-5: 490px;
+
+.wrapper-movie {
+  height: 600px;
+
+  .movie {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+.actions-movie{
+  margin: 10px 0;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 10px;
+
+  button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: $layout-4) {
+  .wrapper-movie {
+    height: 400px;
+  }
+}
+
+@media (max-width: $layout-5) {
+  .wrapper-movie {
+    height: 300px;
+  }
+}

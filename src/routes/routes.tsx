@@ -1,0 +1,18 @@
+export const routes = {
+  trangchu: "/",
+  dangnhap: "/dang-nhap",
+  dangky: "/danh-ky",
+  danhsach: "/danh-sach",
+  yeuthich: "yeu-thich",
+  lichsu: "lich-su",
+  phimbo: "phim-bo",
+  phimle: "phim-le",
+  hoathinh: "hoat-hinh",
+  tvshows: "tv-shows",
+  phimsapchieu: "phim-sap-chieu",
+  theloai: "/the-loai",
+  quocgia: "/quoc-gia",
+  timkiem: "/tim-kiem",
+  phim: "/phim",
+  profile: "/profile",
+};

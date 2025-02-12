@@ -1,0 +1,32 @@
+.wrapper {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+
+  button {
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.8rem;
+    color: white;
+    transition: all linear 0.1s;
+  }
+
+  button:hover {
+    color: white;
+    background-color: #ff8802;
+  }
+
+  button:active {
+    background-color: #d17205;
+  }
+}
+
+.main{
+    display: flex;
+}
+
+.active-button {
+  background-color: #ff8802!important;
+}

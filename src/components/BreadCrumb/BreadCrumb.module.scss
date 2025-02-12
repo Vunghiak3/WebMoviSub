@@ -1,0 +1,41 @@
+$layout-2: 1200px;
+$layout-3: 850px;
+$layout-4: 570px;
+
+// css breadcrumb
+.breadcrumb,
+.breadcrumb > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.breadcrumb {
+  padding: 15px;
+  margin-bottom: 10px;
+  color: rgb(187, 187, 187);
+  flex-wrap: wrap;
+
+  > div svg {
+    font-size: 1.2rem;
+  }
+}
+
+.item-path {
+  color: rgb(187, 187, 187);
+  transition: all 0.1s linear;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.item-path-active {
+  color: white;
+}
+
+@media (max-width: $layout-3) {
+  .breadcrumb{
+    padding: 10px 0;
+  }
+}

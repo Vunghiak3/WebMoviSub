@@ -14,12 +14,18 @@
 - 📱 **Hỗ trợ đa nền tảng**: Xem phim trên máy tính, điện thoại.
 
 ## 🛠 Công Nghệ Sử Dụng
-- 🤖 **Typescript**: Viết code an toàn và dễ bảo trì.
-- ⚛ **Next.js**: Framework mạnh mẽ giúp tối ưu SEO và hiệu suất.
-- 🗄 **MongoDB**: Cơ sở dữ liệu NoSQL lưu trữ phim và thông tin người dùng.
-- 🔗 **RESTful API**: Xây dựng API mạnh mẽ và linh hoạt.
-- 🎨 **Sass**: Tạo giao diện đẹp và responsive.
-- 🛑 **JWT Authentication**: Bảo mật tài khoản người dùng.
+- ⚛ **Next.js**: Hỗ trợ Server-Side Rendering (SSR) và tối ưu hóa SEO.
+- 🗄 **MongoDB**: Lưu trữ dữ liệu phim, danh sách yêu thích, tài khoản người dùng.
+- 🤖 **TypeScript**: Giúp code an toàn, dễ bảo trì.
+- 🔗 **RESTful API**: Xây dựng API linh hoạt.
+- 🎨 **Sass**: Thiết kế giao diện đẹp, dễ quản lý.
+- 🛑 **JWT Authentication**: Bảo mật đăng nhập.
+
+## 🔑 Cấu hình OAuth (GitHub & Google)
+- Để sử dụng đăng nhập OAuth, cần đăng ký ứng dụng trên:
+  - **GitHub**: [GitHub Developer Settings](https://github.com/settings/developers)
+  - **Google**: [Google Cloud Console](https://console.cloud.google.com/)
+- Sau khi đăng ký, lấy **Client ID** và **Client Secret**, rồi thêm vào `.env.local`.
 
 ## 📥 Cài Đặt & Sử Dụng
 1. Clone repository:
@@ -28,8 +34,7 @@
 2. Cài đặt dependencies:
    ```sh
    yarn install  
-hoặc 
-   ```sh
+   hoặc
    npm install
 3. Cấu hình môi trường:
    Tạo file .env.local và thêm các biến môi trường:
@@ -46,8 +51,7 @@ hoặc
 4. Chạy dự án
    ```sh
    yarn dev
-hoặc
-   ```sh 
+   hoặc
    npm run dev
 Ứng dụng sẽ chạy tại http://localhost:3000
 

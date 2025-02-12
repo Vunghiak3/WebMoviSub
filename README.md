@@ -1,4 +1,4 @@
-# CancerApp - Ứng Dụng Đoán Bệnh Ung Thư Bằng AI
+# 🎬 MoviSubs - Ứng Dụng Xem Phim Trực Tuyến
 
 ## 🏥 Giới Thiệu
 **MoviSubs** là một ứng dụng xem phim trực tuyến, cung cấp nhiều thể loại phim và cập nhật liên tục những bộ phim mới nhất. Người dùng có thể tìm kiếm, xem phim, đánh giá và lưu phim yêu thích một cách dễ dàng.
